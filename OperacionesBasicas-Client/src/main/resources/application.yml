@@ -1,0 +1,16 @@
+server:
+  port: 9005
+  
+spring:
+  application:
+    name: operacionescliente
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8761/eureka/
+
+logging:
+  level:
+    org.exampledriven.eureka.customer.shared.CustomerServiceFeignClient: FULL
+    org.exampledriven.eureka: DEBUG  
